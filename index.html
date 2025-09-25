@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Deca Homes Ortigas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-900 text-white">
+    <!-- Replace the image URL below with a real photo of Urban Deca Homes Ortigas -->
+    <img src="https://www.8990housing.com/sites/default/files/styles/banner/public/2021-07/urban-deca-homes-ortigas-avenue-extension.jpg" 
+         alt="Urban Deca Homes Ortigas" 
+         class="absolute inset-0 w-full h-full object-cover opacity-70">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center py-32 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Urban Deca Homes Ortigas</h1>
+      <p class="mt-4 text-lg md:text-xl">Affordable • Accessible • Modern Living</p>
+    </div>
+  </section>
+
+  <!-- Choices Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-10">👇 Choose who you are:</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      
+      <!-- Buyer -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-3">🏠 I’m a Buyer</h3>
+        <p class="mb-4 text-gray-600">Find your dream home today with flexible payment options.</p>
+        <a href="#buyer-form" 
+           class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">Get Started</a>
+      </div>
+
+      <!-- Referral -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-3">🤝 I’m a Referral</h3>
+        <p class="mb-4 text-gray-600">Refer a buyer and earn exciting rewards.</p>
+        <a href="#referral-form" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700">Refer Now</a>
+      </div>
+
+      <!-- Employee -->
+      <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
+        <h3 class="text-xl font-bold mb-3">💼 I want to be an Employee</h3>
+        <p class="mb-4 text-gray-600">Be part of our growing team and build your career with us.</p>
+        <button onclick="showModal('employeeModal')" 
+           class="bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700">
+           Apply via Email
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Buyer Form Section -->
+  <section id="buyer-form" class="py-16 px-6 bg-white shadow-inner">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">📅 Schedule a Site Visit</h2>
+      <p class="mb-8 text-gray-600">Please fill out your details below and we’ll confirm your visit.</p>
+      
+      <form id="buyerForm" class="grid gap-6 text-left">
+        <div>
+          <label class="block mb-2 font-medium">Full Name:</label>
+          <input type="text" name="Full Name" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-blue-300">
+        </div>
+        
+        <div>
+          <label class="block mb-2 font-medium">Date & Time:</label>
+          <input type="datetime-local" name="Date and Time" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-blue-300">
+        </div>
+        
+        <div>
+          <label class="block mb-2 font-medium">Phone Number:</label>
+          <input type="tel" name="Phone Number" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-blue-300">
+        </div>
+        
+        <div class="text-center space-y-4">
+          <button type="submit" 
+                  class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700">
+            Submit Schedule
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Referral Form Section -->
+  <section id="referral-form" class="py-16 px-6 bg-gray-100 shadow-inner">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">🤝 Referral Form</h2>
+      <p class="mb-8 text-gray-600">Refer someone and earn rewards when they buy!</p>
+      
+      <form id="referralForm" class="grid gap-6 text-left">
+        <div>
+          <label class="block mb-2 font-medium">Your Full Name (Referrer):</label>
+          <input type="text" name="Referrer Name" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-green-300">
+        </div>
+        
+        <div>
+          <label class="block mb-2 font-medium">Referral’s Full Name:</label>
+          <input type="text" name="Referral Full Name" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-green-300">
+        </div>
+        
+        <div>
+          <label class="block mb-2 font-medium">Referral’s Phone Number:</label>
+          <input type="tel" name="Referral Phone Number" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:ring focus:ring-green-300">
+        </div>
+        
+        <div class="text-center">
+          <button type="submit" 
+                  class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700">
+            Submit Referral
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Buyer Thank You Modal -->
+  <div id="buyerModal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-8 rounded-2xl text-center max-w-md">
+      <h2 class="text-2xl font-bold text-green-600 mb-4">✅ Thank You!</h2>
+      <p class="mb-6">We’ve received your site visit schedule. Our team will contact you soon.</p>
+      <p class="mb-6">
+        For more info, visit:<br>
+        <a href="https://www.facebook.com/share/1CkGfJR3MW/" target="_blank" class="text-blue-600 font-semibold hover:underline">
+          Urban Deca Homes Ortigas on Facebook
+        </a>
+      </p>
+      <button onclick="closeModal('buyerModal')" class="bg-blue-600 text-white px-6 py-2 rounded-lg">Close</button>
+    </div>
+  </div>
+
+  <!-- Referral Thank You Modal -->
+  <div id="referralModal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-8 rounded-2xl text-center max-w-md">
+      <h2 class="text-2xl font-bold text-green-600 mb-4">✅ Thank You!</h2>
+      <p class="mb-6">Your referral has been submitted. We’ll reach out to them and keep you updated.</p>
+      <button onclick="closeModal('referralModal')" class="bg-green-600 text-white px-6 py-2 rounded-lg">Close</button>
+    </div>
+  </div>
+
+  <!-- Employee Thank You Modal -->
+  <div id="employeeModal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-8 rounded-2xl text-center max-w-md">
+      <h2 class="text-2xl font-bold text-green-600 mb-4">✅ Thank You!</h2>
+      <p class="mb-6">Your interest in joining our team is appreciated. Please send your resume to:<br>
+      <strong>jesreal.lagrimas14@gmail.com</strong></p>
+      <a href="mailto:jesreal.lagrimas14@gmail.com?subject=Job Application - Urban Deca Homes Ortigas" 
+         class="bg-purple-600 text-white px-6 py-2 rounded-lg">Open Email</a>
+      <button onclick="closeModal('employeeModal')" class="mt-4 block mx-auto bg-gray-500 text-white px-6 py-2 rounded-lg">Close</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    const buyerForm = document.getElementById('buyerForm');
+    const referralForm = document.getElementById('referralForm');
+
+    buyerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      showModal('buyerModal');
+      buyerForm.reset();
+    });
+
+    referralForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      showModal('referralModal');
+      referralForm.reset();
+    });
+
+    function showModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
